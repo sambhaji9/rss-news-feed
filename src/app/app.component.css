@@ -31,3 +31,9 @@ a {
     font-size: 12px;
     float: right;
 }
+
+.pub-date {
+    float: right;
+    font-size: 12px;
+    font-style: italic;
+}
