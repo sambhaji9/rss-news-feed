@@ -1,6 +1,7 @@
 <h3 class="header">News feed</h3>
 <div *ngFor="let item of newsItems">
     <mat-card class="news-card">
+        <p class="pub-date">{{item.pubDate}}</p>
         <table>
             <tr>
                 <td>
@@ -19,6 +20,6 @@
         <div style="float: right;">
             <a href="{{item.link}}" target="_blank"><img src="../assets/read_more-24px.svg" alt=""></a>
         </div>
-        
+
     </mat-card>
 </div>
