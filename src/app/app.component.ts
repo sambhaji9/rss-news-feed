@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NewsService } from './news.service';
 import { Item } from './news.model';
+import { listenToElementOutputs } from '@angular/core/src/view/element';
 
 @Component({
    selector: 'app-root',
