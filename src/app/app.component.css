@@ -4,10 +4,16 @@
     font-weight: 400;
 }
 
+.chips-list {
+    margin: 5px;
+}
+
 .news-card {
     clear: both;
     margin: 10px;
     padding: 30px;
+    width: 50%;
+    background: #f0f0f0;
 }
 
 .title {

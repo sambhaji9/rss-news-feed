@@ -29,3 +29,8 @@ interface IFeed {
   description: string;
   image: string;
 }
+
+export interface Ifeed {
+  location: string;
+  url: string;
+}

@@ -1,4 +1,9 @@
 <h3 class="header">News feed</h3>
+<div class="chips-list">
+    <mat-chip-list>
+        <mat-chip *ngFor="let feed of feedUrls" (click)="loadNews(feed)">{{feed.location}}</mat-chip>
+    </mat-chip-list>
+</div>
 <div *ngFor="let item of newsItems">
     <mat-card class="news-card">
         <p class="pub-date">{{item.pubDate}}</p>

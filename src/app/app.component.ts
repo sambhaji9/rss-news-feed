@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NewsService } from './news.service';
-import { Item } from './news.model';
+import { Item, Ifeed } from './news.model';
 import { listenToElementOutputs } from '@angular/core/src/view/element';
 
 @Component({
@@ -11,9 +11,19 @@ import { listenToElementOutputs } from '@angular/core/src/view/element';
 export class AppComponent {
    title = 'rss-news-feed';
    newsItems: Item[] = [];
+   feedUrls: Ifeed[] = [];
+   url = 'https://marathi.abplive.com/home/feed';
 
    constructor(private newsService: NewsService) {
-      this.newsService.getNews().subscribe(response => {
+      this.feedUrls = this.newsService.feedUrls;
+
+      this.newsService.getNews(this.url).subscribe(response => {
+         this.newsItems = response.items;
+      });
+   }
+
+   loadNews(feed) {
+      this.newsService.getNews(feed.url).subscribe(response => {
          this.newsItems = response.items;
       });
    }

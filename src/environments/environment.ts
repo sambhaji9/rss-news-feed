@@ -3,7 +3,23 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+   production: false,
+   links: {
+      home: 'https://marathi.abplive.com/home/feed',
+      pune: 'https://marathi.abplive.com/news/pune/feed',
+      mumbai: 'https://marathi.abplive.com/news/mumbai/feed',
+      maharashtra: 'https://marathi.abplive.com/news/maharashtra/feed',
+      indiaNews: 'https://marathi.abplive.com/news/india/feed',
+      worldNews: 'https://marathi.abplive.com/news/world/feed',
+      technology: 'https://marathi.abplive.com/news/technology/feed',
+      sports: 'https://marathi.abplive.com/sports/feed',
+      movies: 'https://marathi.abplive.com/entertainment/bollywood/feed',
+      lifestyle: 'https://marathi.abplive.com/lifestyle/feed',
+      agriculture: 'https://marathi.abplive.com/news/feed',
+      majhaKatta: 'https://marathi.abplive.com/majha-katta/feed',
+      covid19: 'https://marathi.abplive.com/latest-news/covid-19/feed',
+      coronavirus: 'https://marathi.abplive.com/latest-news/coronavirus/feed'
+   }
 };
 
 /*
