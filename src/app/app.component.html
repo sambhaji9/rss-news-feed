@@ -1,6 +1,24 @@
-<h1>News feed</h1>
+<h3 class="header">News feed</h3>
 <div *ngFor="let item of newsItems">
     <mat-card class="news-card">
-        <p>{{item.title}}</p>
+        <table>
+            <tr>
+                <td>
+                    <img class="thumbnail" src="{{item.thumbnail}}" alt="">
+                </td>
+                <td>
+                    <p class="title">{{item.title}}</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p class="description" [innerHTML]="item.description"></p>
+                </td>
+            </tr>
+        </table>
+        <div style="float: right;">
+            <a href="{{item.link}}" target="_blank"><img src="../assets/read_more-24px.svg" alt=""></a>
+        </div>
+        
     </mat-card>
 </div>
