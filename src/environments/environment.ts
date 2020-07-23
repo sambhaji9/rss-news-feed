@@ -14,7 +14,6 @@ export const environment = {
       technology: 'https://marathi.abplive.com/news/technology/feed',
       sports: 'https://marathi.abplive.com/sports/feed',
       movies: 'https://marathi.abplive.com/entertainment/bollywood/feed',
-      lifestyle: 'https://marathi.abplive.com/lifestyle/feed',
       agriculture: 'https://marathi.abplive.com/news/feed',
       majhaKatta: 'https://marathi.abplive.com/majha-katta/feed',
       covid19: 'https://marathi.abplive.com/latest-news/covid-19/feed',
