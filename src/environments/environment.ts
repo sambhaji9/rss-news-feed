@@ -11,7 +11,6 @@ export const environment = {
       maharashtra: 'https://marathi.abplive.com/news/maharashtra/feed',
       indiaNews: 'https://marathi.abplive.com/news/india/feed',
       worldNews: 'https://marathi.abplive.com/news/world/feed',
-      technology: 'https://marathi.abplive.com/news/technology/feed',
       sports: 'https://marathi.abplive.com/sports/feed',
       movies: 'https://marathi.abplive.com/entertainment/bollywood/feed',
       agriculture: 'https://marathi.abplive.com/news/feed',
